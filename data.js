@@ -1,8 +1,6 @@
-let lastId = 4;
-const data = [
-  { id: 1, desc: "blahblahblah", check: false },
-  { id: 2, desc: "blahblahblasdfd h", check: false },
-  { id: 3, desc: "blahblajdf sdf shblah", check: false },
-  { id: 4, desc: "blahblajdf sdf shblah", check: false },
-  { id: 5, desc: "blahblajdf sdf shblah", check: false },
+let lastId = 1;
+let data = [
+  // { id: 1, desc: "blahblahblah", check: false },
+  // { id: 2, desc: "blahblahblasdfd h", check: false },
+  
 ];

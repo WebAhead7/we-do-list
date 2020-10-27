@@ -73,5 +73,6 @@ function checkTask(id) {
     }
   });
 updateDom(data);
+return data;
 
 }

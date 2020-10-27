@@ -1,7 +1,7 @@
 const testDiv = document.querySelector("#test");
 
 function updateDom(arr) {
-  testDiv.innerHTML = '';
+  testDiv.innerHTML = "";
   arr.forEach((curr) => {
     let div = document.createElement("div");
     div.id = curr.id;
@@ -19,7 +19,6 @@ function listener(e) {
     // console.log(data);
   }
 }
-
 
 function deleteItem(id) {
   // console.log(data);
@@ -43,18 +42,14 @@ function addTodoItem(description) {
       check: false,
     });
 
-    
     updateDom(data);
 
     return data[data.length - 1];
-    
   } else {
     return "Task description empty!";
   }
-
-  
 }
-
+// check test::
 function checkTask(id) {
   console.log(typeof id);
   data.forEach((value) => {
@@ -68,10 +63,9 @@ function checkTask(id) {
       } else {
         // console.log(value);
         value.check = true;
-
       }
     }
   });
-updateDom(data);
-
+  updateDom(data);
+  return data;
 }

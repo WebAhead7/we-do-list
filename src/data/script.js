@@ -42,8 +42,8 @@ function init() {
     addtask.value = "";
   });
 
-  const localStorageData = localStorage.getItem("data");
-  data = JSON.parse(localStorageData);
+  // const localStorageData = localStorage.getItem("data");
+  // data = JSON.parse(localStorageData);
 }
 
 function deleteItem(id) {

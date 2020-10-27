@@ -1,7 +1,9 @@
 const testDiv = document.querySelector("#test");
+const addtask = document.querySelector("#addtask");
+const btn = document.querySelector("#btn-submit");
 
 function updateDom(arr) {
-  testDiv.innerHTML = '';
+  testDiv.innerHTML = "";
   arr.forEach((curr) => {
     let div = document.createElement("div");
     div.id = curr.id;
@@ -14,12 +16,17 @@ function updateDom(arr) {
 function listener(e) {
   if (e.target.type == "button") {
     // deleteItem(e.target.parentNode.id);
-    console.log(e.target.parentNode.id);
     checkTask(e.target.parentNode.id);
-    // console.log(data);
   }
 }
 
+function init() {
+  addtask.value;
+  btn.addEventListener("click", (e) => {
+    addTodoItem(addtask.value);
+    addtask.value = "";
+  });
+}
 
 function deleteItem(id) {
   // console.log(data);
@@ -31,9 +38,8 @@ function deleteItem(id) {
   data = data.filter((current) => current.id != id);
 
   updateDom(data);
-
-  // return newArr;
 }
+
 // checktest::
 function addTodoItem(description) {
   if (description !== null && description.length !== 0) {
@@ -43,35 +49,25 @@ function addTodoItem(description) {
       check: false,
     });
 
-    
     updateDom(data);
 
     return data[data.length - 1];
-    
   } else {
     return "Task description empty!";
   }
-
-  
 }
 
 function checkTask(id) {
-  console.log(typeof id);
   data.forEach((value) => {
     if (value.id == id) {
-      console.log(id, value);
-      //   value.check = !value.check;
       if (value.check == true) {
-        // console.log(value);
         value.check = false;
-        // console.log(value);
       } else {
-        // console.log(value);
         value.check = true;
-
       }
     }
   });
-updateDom(data);
-
+  updateDom(data);
 }
+
+init();

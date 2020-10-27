@@ -16,10 +16,10 @@ function test(name, testFunction) {
     }
   }
 
-  function checkDelete(arr, id, message = `Expected ${arr} not to have id ${id}`) {
+  function checkDelete(data, id, message = `Expected ${data} not to have id ${id}`) {
     // console.log(arr)
     // console.log(id)
-    let flag = arr.some(current => current.id === id)
+    let flag = data.some(current => current.id === id)
     // console.log(flag)
 
     if (flag === false) {

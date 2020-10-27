@@ -22,17 +22,9 @@ function listener(e) {
 
 
 function deleteItem(id) {
-  // console.log(data);
-  // let flag = data.some((current) => current.id === id);
-  // if (flag === false) {
-  //   console.info(`ID ${id} not in array`);
-  //   return false;
-  // }
   data = data.filter((current) => current.id != id);
-
   updateDom(data);
-
-  // return newArr;
+  return data;
 }
 // checktest::
 function addTodoItem(description) {
@@ -42,17 +34,13 @@ function addTodoItem(description) {
       desc: description,
       check: false,
     });
-
-    
     updateDom(data);
-
     return data[data.length - 1];
-    
   } else {
     return "Task description empty!";
   }
 
-  
+
 }
 
 function checkTask(id) {
@@ -72,6 +60,6 @@ function checkTask(id) {
       }
     }
   });
-updateDom(data);
-
+  updateDom(data);
+  return data;
 }

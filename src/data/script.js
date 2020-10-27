@@ -19,6 +19,7 @@ function updateDom(arr) {
   });
 
   localstorage();
+  addtask.focus();
 }
 
 function localstorage() {
@@ -45,10 +46,13 @@ function init() {
   });
 
   let localStorageData = localStorage.getItem("data");
-  data = JSON.parse(localStorageData);
-   localStorageData = localStorage.getItem("lastId");
-  lastId = JSON.parse(localStorageData);
-  
+  if (localStorageData !== null) {
+    data = JSON.parse(localStorageData);
+  }
+  localStorageData = localStorage.getItem("lastId");
+  if (localStorageData !== null) {
+    lastId = JSON.parse(localStorageData);
+  }
   updateDom(data);
 }
 

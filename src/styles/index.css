@@ -92,6 +92,7 @@ body {
   font-size: 22px;
   /* word-wrap: break-word; */
   overflow-wrap: break-word;
+  font-family: "Teko", sans-serif;
 }
 
 .remove-btn {
@@ -153,4 +154,7 @@ body {
 }
 #btn-submit:focus {
   outline: none;
+}
+#btn-submit:active {
+  color: blue;
 }

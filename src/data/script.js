@@ -23,6 +23,7 @@ function updateDom(arr) {
 
 function localstorage() {
   localStorage.setItem("data", JSON.stringify(data));
+  localStorage.setItem("lastId", JSON.stringify(lastId));
 }
 
 function listener(e) {
@@ -43,8 +44,11 @@ function init() {
     addtask.value = "";
   });
 
-  const localStorageData = localStorage.getItem("data");
+  let localStorageData = localStorage.getItem("data");
   data = JSON.parse(localStorageData);
+   localStorageData = localStorage.getItem("lastId");
+  lastId = JSON.parse(localStorageData);
+  
   updateDom(data);
 
 }

@@ -10,9 +10,10 @@ function updateDom(arr) {
     div.classList.add("godfather");
     div.innerHTML = `<i class="fas fa-trash-alt remove-btn"></i><div class="${
       curr.check ? "desc textthrough" : "desc"
-    }">${curr.desc}</div><i class="${
+    }"></div><i class="${
       curr.check ? "fas green-yes" : "far green-no"
     } fa-check-square"></i>`;
+    div.childNodes[1].innerText = curr.desc;
     div.addEventListener("click", (e) => listener(e));
     testDiv.appendChild(div);
   });
@@ -23,6 +24,7 @@ function updateDom(arr) {
 
 function localstorage() {
   localStorage.setItem("data", JSON.stringify(data));
+  localStorage.setItem("lastId", JSON.stringify(lastId));
 }
 
 function listener(e) {
@@ -43,8 +45,11 @@ function init() {
     addtask.value = "";
   });
 
-  const localStorageData = localStorage.getItem("data");
+  let localStorageData = localStorage.getItem("data");
   data = JSON.parse(localStorageData);
+  localStorageData = localStorage.getItem("lastId");
+  lastId = JSON.parse(localStorageData);
+
   updateDom(data);
 }
 

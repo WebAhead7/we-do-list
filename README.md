@@ -28,7 +28,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 <p align="center">
-  <img src="https://github.com/WebAhead7/solid-umbrella/blob/main/src/imgs/screenshot.PNG" width="600" height="286" />
+  <img src="https://github.com/WebAhead7/we-do-list/blob/main/src/img/screenshot.PNG" width="600" height="286" />
 </p>
 To-do-list: The to do list to organize work & life
 
@@ -59,7 +59,7 @@ See the [open issues](https://github.com/WebAhead7/we-do-list/issues) for a list
 <!-- CONTACT -->
 ## Contact
 
-* Mr. Alla/Sameer Bashiyi: [@GitHub](https://github.com/alaabashiyi)
-* Ms. Hala/Areen/7ala/Christina Assaly:  [@GitHub](https://github.com/halaassaly)
+* Mr. Alaa/Saeed Bashiyi: [@GitHub](https://github.com/alaabashiyi)
+* Ms. Hala/Areen/Qamar/7ala/Christina Assaly:  [@GitHub](https://github.com/halaassaly)
 * Mr. Ammar Yousef:  [@GitHub](https://github.com/Ammaryus)
 * Mr. Salah Majadly:  [@GitHub](https://github.com/mjmajadly)

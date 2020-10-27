@@ -10,9 +10,10 @@ function updateDom(arr) {
     div.classList.add("godfather");
     div.innerHTML = `<i class="fas fa-trash-alt remove-btn"></i><div class="${
       curr.check ? "desc textthrough" : "desc"
-    }">${curr.desc}</div><i class="${
+    }"></div><i class="${
       curr.check ? "fas green-yes" : "far green-no"
     } fa-check-square"></i>`;
+    div.childNodes[1].innerText = curr.desc;
     div.addEventListener("click", (e) => listener(e));
     testDiv.appendChild(div);
   });
@@ -42,8 +43,10 @@ function init() {
     addtask.value = "";
   });
 
-  // const localStorageData = localStorage.getItem("data");
-  // data = JSON.parse(localStorageData);
+  const localStorageData = localStorage.getItem("data");
+  data = JSON.parse(localStorageData);
+  updateDom(data);
+
 }
 
 function deleteItem(id) {

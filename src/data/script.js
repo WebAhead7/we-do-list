@@ -22,6 +22,17 @@ function updateDom(arr) {
   addtask.focus();
 }
 
+function filterData(what) {
+  let checked = data.filter((cur) => cur.check);
+  let notChecked = data.filter((cur) => !cur.check);
+
+  what == "check"
+    ? updateDom(checked)
+    : updateDom(data) || what == "uncheck"
+    ? updateDom(notChecked)
+    : updateDom(data);
+}
+
 function localstorage() {
   localStorage.setItem("data", JSON.stringify(data));
   localStorage.setItem("lastId", JSON.stringify(lastId));

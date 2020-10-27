@@ -158,3 +158,22 @@ body {
 #btn-submit:active {
   color: blue;
 }
+
+.radio-father {
+  width: 366px;
+  padding: 0 10px;
+}
+
+.radio-form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

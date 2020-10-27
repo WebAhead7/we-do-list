@@ -185,23 +185,21 @@ body {
   color: blue;
 }
 
-::-webkit-input-placeholder {
+.radio-father {
+  width: 366px;
+  padding: 0 10px;
+}
+
+.radio-form {
+  width: 100%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
+}
+
+form-group {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  /* text-align: center; */
-}
-
-:-moz-placeholder {
-  /* Firefox 18- */
-  /* text-align: center; */
-}
-
-::-moz-placeholder {
-  /* Firefox 19+ */
-  /* text-align: center; */
-}
-
-:-ms-input-placeholder {
-  /* text-align: center; */
+  align-items: center;
 }

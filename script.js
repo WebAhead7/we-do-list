@@ -10,7 +10,7 @@ function updateDom(arr) {
     div.classList.add("godfather");
     div.innerHTML = `<i class="${
       curr.check ? "fas green-yes" : "far green-no"
-    } fa-check-square"></i><div class="desc">${
+    } fa-check-square"></i><div class="${curr.check? "desc textthrough" : "desc"}">${
       curr.desc
     }</div><i class="fas fa-trash-alt remove-btn"></i>`;
     div.addEventListener("click", (e) => listener(e));

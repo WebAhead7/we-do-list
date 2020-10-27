@@ -1,6 +1,6 @@
 let lastId = 1;
 
-const localStorageData = localStorage.getItem("data");
+// const localStorageData = localStorage.getItem("data");
 
 let data = [
   // { id: 1, desc: "blahblahblah", check: false },

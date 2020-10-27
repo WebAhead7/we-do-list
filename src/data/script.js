@@ -44,6 +44,8 @@ function init() {
 
   const localStorageData = localStorage.getItem("data");
   data = JSON.parse(localStorageData);
+  updateDom(data);
+  console.log(data);
 }
 
 function deleteItem(id) {

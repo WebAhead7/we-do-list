@@ -60,6 +60,6 @@ See the [open issues](https://github.com/WebAhead7/we-do-list/issues) for a list
 ## Contact
 
 * Mr. Alaa/Saeed Bashiyi: [@GitHub](https://github.com/alaabashiyi)
-* Ms. Hala/Areen/Qamar/7ala/Christina/Kristine Assaly:  [@GitHub](https://github.com/halaassaly)
+* Ms. Hala/Areen/Qamar/7ala/Kristina/Christine Assaly:  [@GitHub](https://github.com/halaassaly)
 * Mr. Ammar/3amer Yousef:  [@GitHub](https://github.com/Ammaryus)
 * Mr. Salah/Majde Majadly:  [@GitHub](https://github.com/mjmajadly)

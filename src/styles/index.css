@@ -70,6 +70,7 @@ body {
   position: relative;
   border-bottom: rgba(0, 0, 0, 0.55) 1px solid;
   padding: 20px 5px;
+  word-break: break-all;
 }
 
 .godfather .desc {

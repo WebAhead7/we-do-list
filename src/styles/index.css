@@ -2,13 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Staatliches', cursive;
-
+  font-family: "Staatliches", cursive;
 }
 
 body {
   width: 100%;
+  min-height: 100vh;
   margin: 0 auto;
+  background: linear-gradient(to bottom, rgb(226, 194, 248), rgb(78, 112, 129));
 }
 
 .todo-item {
@@ -24,8 +25,8 @@ body {
   padding-top: 50px;
 }
 
-.test {
-  width: 100%;
+#test {
+  padding-top: 30px;
 }
 .godfather:nth-child(even) {
   background-color: rgb(225, 240, 250, 0.5);
@@ -74,15 +75,24 @@ body {
   padding: 20px 5px;
   word-break: break-all;
 }
-
+.godfather:nth-child(1) {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.godfather:last-child {
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
 .godfather .desc {
-  /* text-align:; */
   display: flex;
   /* justify-content: center; */
   align-items: center;
   width: 300px;
   padding: 10px 10px;
   font-size: 22px;
+  /* word-wrap: break-word; */
+  overflow-wrap: break-word;
+  font-family: "Teko", sans-serif;
 }
 
 .remove-btn {
@@ -100,5 +110,51 @@ body {
 }
 
 .textthrough {
-text-decoration: line-through;
+  text-decoration: line-through;
+}
+
+#addtask {
+  display: flex;
+  width: 100%;
+  opacity: 0.6;
+  height: 100%;
+  font-size: 18px;
+  padding-left: 10px;
+  border-radius: 5px;
+  border: 0;
+}
+
+#addtask:focus {
+  /* outline-style: double; */
+  outline-color: blue;
+  outline-width: 4px;
+}
+.add-task {
+  width: 366px;
+  display: flex;
+  position: relative;
+  height: 50px;
+}
+#btn-submit {
+  position: absolute;
+  cursor: pointer;
+  font-size: 30px;
+  width: 10%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: transparent;
+  /* outline: none; */
+  border: none;
+  opacity: 0.7;
+  color: rgba(0, 0, 0, 0.3);
+}
+#btn-submit:hover {
+  color: rgba(110, 33, 97, 0.3);
+}
+#btn-submit:focus {
+  outline: none;
+}
+#btn-submit:active {
+  color: blue;
 }

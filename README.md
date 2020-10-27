@@ -30,7 +30,7 @@
 <p align="center">
   <img src="https://github.com/WebAhead7/solid-umbrella/blob/main/src/imgs/screenshot.PNG" width="600" height="286" />
 </p>
-Todoist: The to do list to organize work & life
+To-do-list: The to do list to organize work & life
 
 Out application is the top-ranked productivity app that helps millions of people organize work and life.
 

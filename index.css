@@ -19,20 +19,47 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
+  padding-top: 50px;
 }
 
 .test {
   width: 100%;
 }
+.godfather:nth-child(even) {
+  background-color: rgb(225, 240, 250, 0.5);
+}
+.godfather:nth-child(odd) {
+  background-color: rgb(206, 218, 226, 0.5);
+}
+.add-task {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+}
+
+.add-task button {
+  width: 100%;
+  font-size: 20px;
+}
 
 .green-yes {
-  color: green;
+  color: purple;
   cursor: pointer;
+  font-size: 35px;
 }
 
 .green-no {
   color: rgba(0, 0, 0, 0.3);
   cursor: pointer;
+  font-size: 35px;
+}
+
+.green-no:hover {
+  color: rgba(110, 33, 97, 0.3);
+  cursor: pointer;
+  font-size: 35px;
 }
 
 .godfather {
@@ -40,23 +67,31 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 50px;
   position: relative;
+  border-bottom: rgba(0, 0, 0, 0.55) 1px solid;
+  padding: 20px 5px;
 }
 
 .godfather .desc {
+  /* text-align:; */
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
-  flex-wrap: wrap;
-  max-width: 100%;
+  width: 300px;
+  padding: 10px 10px;
+  font-size: 22px;
 }
 
 .remove-btn {
   /* position: absolute; */
   top: 2px;
-  right: 2px;
+  left: 2px;
   font-weight: 18px;
   cursor: pointer;
+  color: rgb(207, 142, 142);
+  font-size: 30px;
+}
+
+.remove-btn:hover {
   color: red;
 }

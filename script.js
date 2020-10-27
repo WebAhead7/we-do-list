@@ -8,11 +8,11 @@ function updateDom(arr) {
     let div = document.createElement("div");
     div.id = curr.id;
     div.classList.add("godfather");
-    div.innerHTML = `<i class="${
-      curr.check ? "fas green-yes" : "far green-no"
-    } fa-check-square"></i><div class="desc">${
+    div.innerHTML = `<i class="fas fa-trash-alt remove-btn"></i><div class="desc">${
       curr.desc
-    }</div><i class="fas fa-trash-alt remove-btn"></i>`;
+    }</div><i class="${
+      curr.check ? "fas green-yes" : "far green-no"
+    } fa-check-square"></i>`;
     div.addEventListener("click", (e) => listener(e));
     testDiv.appendChild(div);
   });

@@ -28,7 +28,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 <p align="center">
-  <img src="https://github.com/WebAhead7/solid-umbrella/blob/main/src/imgs/screenshot.PNG" width="600" height="286" />
+  <img src="https://github.com/WebAhead7/we-do-list/blob/main/src/img/screenshot.PNG" width="600" height="286" />
 </p>
 To-do-list: The to do list to organize work & life
 

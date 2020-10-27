@@ -4,7 +4,7 @@
 <br />
 
 <p align="center">
-  <img src="https://github.com/WebAhead7/solid-umbrella/blob/main/src/imgs/Clouds.jpg" width="250" height="248"/>
+  <img src="https://github.com/WebAhead7/we-do-list/blob/main/src/img/logo.PNG" width="250" height="248"/>
 </p>
 <p align="center">
   <h3 align="center">Best To-do App EVER</h3>

@@ -4,7 +4,19 @@ const btn = document.querySelector("#btn-submit");
 
 function updateDom(arr) {
   testDiv.innerHTML = "";
-  arr.forEach((curr) => {
+  let arrCopy = arr;
+  switch (displayOptionSelected) {
+  case 'completedtodos':
+    arrCopy = arr.filter(todo=> todo.check)
+    break;
+    case 'notCompletedtodos':
+      arrCopy = arr.filter(todo=> !todo.check)
+      break;
+    default:
+      console.log('check the ids....')
+      break;
+  }
+  arrCopy.forEach((curr) => {
     let div = document.createElement("div");
     div.id = curr.id;
     div.classList.add("godfather");
@@ -92,3 +104,20 @@ function checkTask(id) {
 }
 
 init();
+
+
+/* stretch features */
+
+const displayOptions = document.querySelectorAll('input[type = radio]');
+console.log(displayOptions);
+displayOptions.forEach(option =>{
+  option.addEventListener('click',(e)=>{
+    
+    displayOptions.forEach(option=>{
+      option.checked = false;
+    })
+    console.log(e.target.checked = true);
+    displayOptionSelected = e.target.id;
+    updateDom(data);
+  })
+})

@@ -18,6 +18,7 @@ function updateDom(arr) {
   });
 
   localstorage();
+  addtask.focus();
 }
 
 function localstorage() {
@@ -44,6 +45,7 @@ function init() {
 
   const localStorageData = localStorage.getItem("data");
   data = JSON.parse(localStorageData);
+  updateDom(data);
 }
 
 function deleteItem(id) {

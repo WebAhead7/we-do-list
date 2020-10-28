@@ -31,7 +31,7 @@ function updateDom(arr) {
   });
 
   localstorage();
-  addtask.focus();
+  // addtask.focus();
 }
 
 function filterData(what) {

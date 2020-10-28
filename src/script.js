@@ -6,14 +6,13 @@ function updateDom(arr) {
   testDiv.innerHTML = "";
   let arrCopy = arr;
   switch (displayOptionSelected) {
-  case 'completedtodos':
-    arrCopy = arr.filter(todo=> todo.check)
-    break;
-    case 'notCompletedtodos':
-      arrCopy = arr.filter(todo=> !todo.check)
+    case "completedtodos":
+      arrCopy = arr.filter((todo) => todo.check);
+      break;
+    case "notCompletedtodos":
+      arrCopy = arr.filter((todo) => !todo.check);
       break;
     default:
-      console.log('check the ids....')
       break;
   }
   arrCopy.forEach((curr) => {
@@ -31,18 +30,6 @@ function updateDom(arr) {
   });
 
   localstorage();
-  addtask.focus();
-}
-
-function filterData(what) {
-  let checked = data.filter((cur) => cur.check);
-  let notChecked = data.filter((cur) => !cur.check);
-
-  what == "check"
-    ? updateDom(checked)
-    : updateDom(data) || what == "uncheck"
-    ? updateDom(notChecked)
-    : updateDom(data);
 }
 
 function localstorage() {
@@ -52,7 +39,6 @@ function localstorage() {
 
 function listener(e) {
   if (e.target.classList[2] == "fa-check-square") {
-    console.log("WORKS");
     checkTask(e.target.parentNode.id);
   }
 
@@ -102,33 +88,25 @@ function addTodoItem(description) {
 // check test::
 function checkTask(id) {
   data.forEach((value) => {
-    if (value.id == id) {
-      if (value.check == true) {
-        value.check = false;
-      } else {
-        value.check = true;
-      }
-    }
+    value.id == id ? (value.check = !value.check) : false;
   });
   updateDom(data);
   return data;
 }
 
-init();
-
-
 /* stretch features */
 
-const displayOptions = document.querySelectorAll('input[type = radio]');
-console.log(displayOptions);
-displayOptions.forEach(option =>{
-  option.addEventListener('click',(e)=>{
-    
-    displayOptions.forEach(option=>{
+const displayOptions = document.querySelectorAll("input[type = radio]");
+
+displayOptions.forEach((option) => {
+  option.addEventListener("click", (e) => {
+    displayOptions.forEach((option) => {
       option.checked = false;
-    })
-    console.log(e.target.checked = true);
+    });
+    e.target.checked = true;
     displayOptionSelected = e.target.id;
     updateDom(data);
-  })
-})
+  });
+});
+
+init();
